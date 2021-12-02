@@ -9,8 +9,7 @@ def main():
     # lines = helper.read_lines("example.txt")
     lines = helper.read_lines("input.txt")
 
-    horizontal = 0
-    depth = 0
+    horizontal, depth = (0, 0)
 
     for line in lines:
         parts = line.split()

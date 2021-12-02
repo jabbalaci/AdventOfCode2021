@@ -9,9 +9,7 @@ function main()
     fname = "input.txt"
     lines = Helper.read_lines(fname)
 
-    horizontal = 0
-    depth = 0
-    aim = 0
+    horizontal, depth, aim = (0, 0, 0)
 
     for line in lines
         parts = split(line)

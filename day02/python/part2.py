@@ -9,9 +9,7 @@ def main():
     # lines = helper.read_lines("example.txt")
     lines = helper.read_lines("input.txt")
 
-    horizontal = 0
-    depth = 0
-    aim = 0
+    horizontal, depth, aim = (0, 0, 0)
 
     for line in lines:
         parts = line.split()
@@ -30,6 +28,7 @@ def main():
     #
     print(f"{horizontal=}")
     print(f"{depth=}")
+    print(f"{aim=}")
     print("---")
     print(horizontal * depth)
 
