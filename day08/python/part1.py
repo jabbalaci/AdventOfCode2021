@@ -6,12 +6,12 @@ import helper
 def main():
     # lines = helper.read_lines("example.txt")
     lines = helper.read_lines("input.txt")
+
     total = 0
     ok_lengths = (2, 3, 4, 7)
     for line in lines:
-        _, right = line.split("|")
-        words = right.split()
-        for w in words:
+        right = line.split("|")[1]
+        for w in right.split():
             if len(w) in ok_lengths:
                 total += 1
             #
